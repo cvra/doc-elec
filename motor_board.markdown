@@ -1,8 +1,8 @@
-# Introduction
+# Abstract
 The Motor Control Board (MCB) is a network node used to control a single DC motor.
 It will interface on our standardized bus and must implement some common control strategies.
 
-# Encombrement
+# Size
 * lwh: 12x25x6 mm
 * No connections (SOLDER ALL THE WIRES) -> hole
 
@@ -18,7 +18,7 @@ It will interface on our standardized bus and must implement some common control
 * Decoupling cap for all voltages.
 * Input voltage : 9.6V-16.8V.
 * CAN Interface.
-* SWD + traceout pour debug et prog trous métallisés
+* SWD + traceout for debug and flash on metallized holes.
 * Inputs : A/B/I + 1 * (GPIO + 3.3V + GND).
 * MCU: STM32F302K8
 * Quartz Oscillator
@@ -29,11 +29,11 @@ It will interface on our standardized bus and must implement some common control
 * Interface to the CVRA bus.
 * preemptive RTOS
 * Bootloader
-* Programmable en 20 secondes
-* Mesurer certaines grandeurs et pouvoir les importer dans Numpy / MATLAB.
-* Synchronisation des timestamps.
+* Build + flash time : 20 s
+* Measure some values from the code and have Python / MATLAB API to plot them.
+* Timestamp sync.
 * Unit tests for everything.
-* Self test y compris étage de puissance.
+* Self test including power components.
 
 # Application Notes
-* Placer les composants à 45 degrés
+* Rotate components by 45° can lead to nice size improvements.
